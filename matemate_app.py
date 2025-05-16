@@ -1,5 +1,6 @@
 # app_matemate.py
 import streamlit as st
+import os
 from google import genai
 from google.genai import types
 from PIL import Image
@@ -31,7 +32,7 @@ st.markdown('<div class="title">🧠 MateMate: IA que explica y dibuja</div>', u
 st.write("¡Escribe una pregunta o una descripción y deja que nuestra IA haga magia!")
 
 # --- API Key y cliente ---
-GEMINI_API_KEY = "AIzaSyDIMQIuMT6x7320o10J4axZh15YCN6AycQ"
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 client = genai.Client(api_key=GEMINI_API_KEY)
 
 # --- Entrada del usuario ---
