@@ -50,11 +50,11 @@ if st.button("Generar"):
 
             for part in response.candidates[0].content.parts:
                 if part.text is not None:
-                    st.markdown(f"### 📘 Explicación Generada\n{part.text}")
+                    st.markdown(f"### 📘 Ahí tienes prenda\n{part.text}")
                 elif part.inline_data is not None:
                     image = Image.open(BytesIO(part.inline_data.data))
                     st.markdown('<div class="image-frame">', unsafe_allow_html=True)
-                    st.image(image, caption="🎨 Imagen generada por IA", use_column_width=True)
+                    st.image(image, caption="🎨 Imagen generada por mois", use_container_width=True)
                     st.markdown('</div>', unsafe_allow_html=True)
     else:
         st.warning("Escribe algo en el cuadro de texto para empezar.")
