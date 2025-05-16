@@ -35,7 +35,7 @@ GEMINI_API_KEY = "AIzaSyDIMQIuMT6x7320o10J4axZh15YCN6AycQ"
 client = genai.Client(api_key=GEMINI_API_KEY)
 
 # --- Entrada del usuario ---
-prompt = st.text_input(✏️ ¿Qué quieres hoy jomio/jomia?", placeholder="Ej: ¿Cómo funciona la fotosíntesis? o Mapa España")
+prompt = st.text_input("✏️ ¿Qué quieres hoy jomio/jomia?", placeholder="Ej: ¿Cómo funciona la fotosíntesis? o Mapa España")
 
 if st.button("Generar"):
     if prompt:
