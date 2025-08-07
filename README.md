@@ -47,7 +47,3 @@ Pillow
    ```bash
    streamlit run matemate_app.py
    ```
-
-## Créditos
-
-Proyecto realizado por un alumno del curso de especialización "IA y Big Data", IES Las Fuentezuelas.
