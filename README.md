@@ -32,18 +32,5 @@ Pillow
 - `requirements.txt`: Dependencias necesarias para ejecutar la app
 - `gitattributes.txt`: Configuración básica de Git
 
-## Ejecución local
-
-1. Clona el repositorio.
-2. Instala los requisitos:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Crea un archivo `.streamlit/secrets.toml` con tu API key de Gemini:
-   ```toml
-   GEMINI_API_KEY = "tu_clave_api_aquí"
-   ```
-4. Ejecuta la aplicación:
-   ```bash
-   streamlit run matemate_app.py
-   ```
+## Ejecución 
+   https://matemate.streamlit.app/
